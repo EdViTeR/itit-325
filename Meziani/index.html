@@ -1,0 +1,223 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Meziani Anis | Моя страница</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', system-ui, 'Roboto', sans-serif;
+      background: radial-gradient(circle at 20% 30%, #0a0f1e, #03060c);
+      min-height: 100vh;
+      color: #f0f3fa;
+      line-height: 1.5;
+    }
+
+    header {
+      background: rgba(5, 10, 20, 0.65);
+      backdrop-filter: blur(16px);
+      padding: 1rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    header a {
+      color: #7ad0ff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.25s ease;
+      font-size: 1.05rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 40px;
+    }
+
+    header a:first-child {
+      font-size: 1.3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ffffff, #7ad0ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      padding-left: 0;
+    }
+
+    header a:hover {
+      color: #ffb347;
+      background: rgba(255, 180, 71, 0.1);
+    }
+
+    .profile {
+      max-width: 880px;
+      margin: 3rem auto;
+      background: rgba(12, 18, 32, 0.6);
+      backdrop-filter: blur(12px);
+      border-radius: 48px;
+      padding: 2rem 2rem 2.5rem;
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 212, 255, 0.15);
+      text-align: center;
+    }
+
+    .profile img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00e0ff;
+      box-shadow: 0 0 0 4px rgba(0, 224, 255, 0.2), 0 20px 30px -10px black;
+      transition: all 0.3s;
+      background: #111;
+    }
+
+    .profile img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 0 6px rgba(0, 224, 255, 0.4);
+      border-color: #ffbc6e;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin: 1rem 0 0.5rem;
+      background: linear-gradient(120deg, #ffffff, #7ad0ff, #a3e4ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+
+    .about-text {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 1rem 1.5rem;
+      border-radius: 32px;
+      margin: 1.2rem 0;
+      text-align: left;
+    }
+
+    .about-text p {
+      font-size: 1.08rem;
+      color: #eef5ff;
+    }
+
+    .about-text strong {
+      color: #7ad0ff;
+      margin-right: 8px;
+    }
+
+    .motto {
+      display: inline-block;
+      background: linear-gradient(145deg, #ffb34722, #ff8c0022);
+      padding: 0.6rem 1.6rem;
+      border-radius: 60px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #ffdfb8;
+      border-left: 3px solid #ffb347;
+      margin: 0.75rem 0;
+    }
+
+    .hobbies {
+      margin-top: 2rem;
+    }
+
+    .hobbies h2 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: #c0e4ff;
+      margin-bottom: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 2px dashed #7ad0ff66;
+      padding-bottom: 6px;
+    }
+
+    .hobby-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    .hobby-card {
+      background: rgba(20, 30, 55, 0.7);
+      backdrop-filter: blur(4px);
+      border-radius: 60px;
+      padding: 0.7rem 1.8rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid rgba(122, 208, 255, 0.4);
+      transition: all 0.25s;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-6px);
+      background: rgba(30, 50, 90, 0.85);
+      border-color: #ffb347;
+    }
+
+    .emoji-big {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 550px) {
+      .profile {
+        margin: 1.5rem;
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      .hobby-card {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="#">Meziani Anis</a>
+  <a href="index.html">◀ Назад</a>
+</header>
+
+<section class="profile">
+  <img src="image/neymar.png" alt="Фото Meziani Anis">
+  <h1>Meziani Anis</h1>
+
+  <div class="about-text">
+    <p><strong>📌 О себе</strong> Привет! Меня зовут Anis. Я обожаю музыку и играть в футбол. Жизнь прекрасна, и я наслаждаюсь каждым моментом. Музыка помогает мне творить, футбол даёт энергию, а IT открывает новые горизонты.</p>
+  </div>
+
+  <div class="motto">
+    ✨ Жизнь прекрасна ✨
+  </div>
+
+  <div class="hobbies">
+    <h2>🎧 Мои увлечения</h2>
+    <div class="hobby-grid">
+      <div class="hobby-card"><span class="emoji-big">🎹</span> Пианино</div>
+      <div class="hobby-card"><span class="emoji-big">⚽</span> Футбол</div>
+      <div class="hobby-card"><span class="emoji-big">💻</span> IT</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
