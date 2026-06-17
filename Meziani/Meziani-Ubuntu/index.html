@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анис Мезиани - Проект Linux</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #2a5298;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .info {
+            text-align: left;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .info p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #2a5298;
+            display: inline-block;
+            width: 130px;
+        }
+
+        .github-link {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .github-link:hover {
+            background: #1e3c72;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🐧 Проект Linux</h1>
+        <div class="badge">Анис Мезиани</div>
+
+        <div class="info">
+            <p><span class="label">👤 Имя :</span> Анис Мезиани</p>
+            <p><span class="label">📚 Класс :</span> itit 325</p>
+            <p><span class="label">📝 Задание :</span> Проект Linux - GitHub</p>
+            <p><span class="label">💻 Инструменты :</span> VirtualBox, Ubuntu, Git</p>
+            <p><span class="label">📅 Дата :</span> Май 2026</p>
+            <p><span class="label">📧 Почта :</span> mezianianis618@gmail.com</p>
+        </div>
+
+        <a href="https://github.com/EdViTeR/itit-325/tree/main/Meziani/Meziani_Ubuntu" class="github-link" target="_blank">
+             Посмотреть мою работу на GitHub
+        </a>
+
+        <footer>
+            Выполнено в рамках курса Сетей - itit 325
+        </footer>
+    </div>
+</body>
+</html>
